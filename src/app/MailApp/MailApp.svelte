@@ -6,6 +6,4 @@
 </div>
 
 <style>
-	.MailApp {
-	}
 </style>

@@ -4,21 +4,5 @@ import SettingsApp from "src/app/SettingsApp/SettingsApp.svelte"
 import ChromeIcon from "src/Img/ChromeIcon.svelte"
 import EmailIcon from "src/Img/EmailIcon.svelte"
 import SettingsIcon from "src/Img/SettingsIcon.svelte"
-import { writable } from "svelte/store"
 
-
-export const pinnedApps = writable([{
-        icon: EmailIcon,
-        component: MailApp
-    },
-    {
-        icon: ChromeIcon,
-        component: ChromeApp
-    },
-    {
-        icon: SettingsIcon,
-        component: SettingsApp
-    },
-])
-
-export const isStartOpen = writable(false)
+export const openedApps = writable([])

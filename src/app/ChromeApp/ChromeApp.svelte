@@ -3,9 +3,7 @@
 </script>
 
 <div class="ChromeApp">
-	<a href="https://www.google.it">
-		<ChromeIcon />
-	</a>
+	<ChromeIcon />
 </div>
 
 <style>
