@@ -8,14 +8,17 @@ import { writable } from "svelte/store"
 
 
 export const pinnedApps = writable([{
+        id: crypto.randomUUID(),
         icon: EmailIcon,
         component: MailApp
     },
     {
+        id: crypto.randomUUID(),
         icon: ChromeIcon,
         component: ChromeApp
     },
     {
+        id: crypto.randomUUID(),
         icon: SettingsIcon,
         component: SettingsApp
     },
