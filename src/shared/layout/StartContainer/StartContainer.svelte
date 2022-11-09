@@ -16,14 +16,16 @@
 
 <style>
 	.StartContainer {
-		width: 300px;
+		width: 500px;
 		height: 500px;
 		border: 1px solid red;
-		background: black;
+		background-color: rgba(var(--black), 0.7);
+		backdrop-filter: blur(3px);
 		position: fixed;
 		bottom: 0;
 		left: 0;
 		margin-bottom: 70px;
 		margin-left: 10px;
+		padding: 10px;
 	}
 </style>
