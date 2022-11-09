@@ -10,5 +10,10 @@
 
 <style>
 	.UserProfile {
+		display: flex;
+		align-items: center;
+		margin: 15px;
+		margin-left: 40px;
+		gap: 10px;
 	}
 </style>

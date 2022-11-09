@@ -1,10 +1,10 @@
 <script>
-	import SearchIcon from 'src/Img/SearchIcon.svelte';
 	import InputText from './InputText.svelte';
+	import Search from './Search.svelte';
 </script>
 
 <div class="SearchBar">
-	<SearchIcon />
+	<Search />
 	<InputText />
 </div>
 
@@ -14,5 +14,7 @@
 		align-items: center;
 		justify-content: center;
 		gap: 5px;
+		margin: 20px;
+		position: relative;
 	}
 </style>

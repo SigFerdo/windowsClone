@@ -13,5 +13,8 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		margin: 10px;
+		font-weight: 400;
+		margin-left: 40px;
 	}
 </style>

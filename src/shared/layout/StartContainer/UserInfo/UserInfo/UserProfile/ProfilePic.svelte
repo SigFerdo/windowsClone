@@ -7,10 +7,10 @@
 
 <style>
 	.ProfilePic {
-		width: 50px;
+		width: 40px;
 		border-radius: 50%;
 		overflow: hidden;
-		height: 50px;
+		height: 40px;
 	}
 
 	img {

@@ -14,5 +14,8 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		background-color: rgba(var(--black), 0.5);
+		border-top: 1px solid gray;
+		border-radius: 5px;
 	}
 </style>

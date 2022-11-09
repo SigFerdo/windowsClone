@@ -11,7 +11,6 @@
 
 <style>
 	.FeaturedApps {
-		border: 1px solid green;
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);
 		gap: 5px;

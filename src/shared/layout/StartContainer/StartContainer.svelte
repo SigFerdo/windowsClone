@@ -20,7 +20,7 @@
 	.StartContainer {
 		width: 500px;
 		height: 500px;
-		border: 1px solid red;
+		border-radius: 5px;
 		background-color: rgba(var(--black), 0.7);
 		backdrop-filter: blur(3px);
 		position: fixed;
@@ -28,8 +28,8 @@
 		left: 0;
 		margin-bottom: 70px;
 		margin-left: 10px;
-		padding: 10px;
 		display: flex;
 		flex-direction: column;
+		border: 1px solid gray;
 	}
 </style>
