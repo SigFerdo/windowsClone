@@ -1,6 +1,7 @@
 <script>
 	import { isStartOpen } from 'src/utils/stores/start';
 	import { fly } from 'svelte/transition';
+	import AllAppsContainer from './AllAppsContainer/AllAppsContainer.svelte';
 	import FeaturedApps from './FeaturedApps/FeaturedApps.svelte';
 	import SearchBar from './SearchBar/SearchBar.svelte';
 	import UserInfo from './UserInfo/UserInfo.svelte';
@@ -9,6 +10,7 @@
 {#if $isStartOpen}
 	<div class="StartContainer" transition:fly={{ y: 30 }}>
 		<SearchBar />
+		<AllAppsContainer />
 		<FeaturedApps />
 		<UserInfo />
 	</div>
@@ -27,5 +29,7 @@
 		margin-bottom: 70px;
 		margin-left: 10px;
 		padding: 10px;
+		display: flex;
+		flex-direction: column;
 	}
 </style>
