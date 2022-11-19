@@ -1,10 +1,12 @@
 import ChromeApp from "src/app/ChromeApp/ChromeApp.svelte"
 import MailApp from "src/app/MailApp/MailApp.svelte"
 import SettingsApp from "src/app/SettingsApp/SettingsApp.svelte"
+import AudioIcon from "src/Img/AudioIcon.svelte"
 import ChromeIcon from "src/Img/ChromeIcon.svelte"
 import EmailIcon from "src/Img/EmailIcon.svelte"
 import SettingsIcon from "src/Img/SettingsIcon.svelte"
-import { writable } from "svelte/store"
+import WifiIcon from "src/Img/WifiIcon.svelte"
+import { readable, writable } from "svelte/store"
 import { openedApps } from "./openedApps"
 
 
@@ -53,3 +55,20 @@ export const addApp = (app) => {
         })
     })
 };
+
+
+
+
+export const infoApps = readable([{
+        id: crypto.randomUUID(),
+        icon: WifiIcon,
+        component: WifiComponent,
+        name: "wifi"
+    },
+    {
+        id: crypto.randomUUID(),
+        icon: AudioIcon,
+        component: AudioComponent,
+        name: "audio"
+    },
+])
