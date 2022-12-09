@@ -1,13 +1,12 @@
 <script>
 	import { addApp, pinnedApps } from 'src/utils/stores/start';
+	import SingleApp from './SingleApp.svelte';
 </script>
 
 <div class="Apps">
 	{#each $pinnedApps as app}
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
-		<div on:click={() => addApp(app)}>
-			<svelte:component this={app.icon} />
-		</div>
+		<SingleApp {app} />
 	{/each}
 </div>
 
@@ -15,5 +14,6 @@
 	.Apps {
 		display: flex;
 		gap: 5px;
+		align-items: center;
 	}
 </style>

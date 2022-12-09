@@ -19,5 +19,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		background-color: rgba(var(--black), 0.7);
+		backdrop-filter: blur(10px);
+		z-index: 9;
 	}
 </style>

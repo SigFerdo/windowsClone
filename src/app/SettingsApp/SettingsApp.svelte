@@ -1,7 +1,10 @@
 <script>
+	import SettingsIcon from 'src/Img/SettingsIcon.svelte';
 </script>
 
-<div class="SettingsApp">SettingsApp</div>
+<div class="SettingsApp">
+	<SettingsIcon />
+</div>
 
 <style>
 	.SettingsApp {

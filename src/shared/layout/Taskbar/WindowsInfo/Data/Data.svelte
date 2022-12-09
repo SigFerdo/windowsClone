@@ -1,7 +1,8 @@
 <script>
+	let date = new Date();
 </script>
 
-<div class="Data">12/11/2022</div>
+<div class="Data">{date.toLocaleDateString('it')}</div>
 
 <style>
 	.Data {

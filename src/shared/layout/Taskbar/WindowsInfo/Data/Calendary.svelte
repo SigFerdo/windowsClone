@@ -9,10 +9,9 @@
 </div>
 
 <style>
-	.Data {
+	.Calendary {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-		text-align: center;
+		align-items: flex-end;
 	}
 </style>
