@@ -1,6 +1,6 @@
 <script>
 	import Desktop from 'src/Desktop/Desktop.svelte';
-	import AppContainer from 'src/shared/layout/AppContainer/AppContainer.svelte';
+	import OpenedApps from 'src/shared/layout/OpenedApps/OpenedApps.svelte';
 	import StartContainer from 'src/shared/layout/StartContainer/StartContainer.svelte';
 	import Taskbar from 'src/shared/layout/Taskbar/Taskbar.svelte';
 	import '../global.css';
@@ -10,10 +10,7 @@
 	<Desktop />
 	<Taskbar />
 	<StartContainer />
-	<AppContainer />
-	<main>
-		<slot />
-	</main>
+	<OpenedApps />
 </div>
 
 <style>

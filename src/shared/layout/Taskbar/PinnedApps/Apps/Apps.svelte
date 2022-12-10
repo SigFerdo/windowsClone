@@ -5,7 +5,6 @@
 
 <div class="Apps">
 	{#each $pinnedApps as app}
-		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		<SingleApp {app} />
 	{/each}
 </div>

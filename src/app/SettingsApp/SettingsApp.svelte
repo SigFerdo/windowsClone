@@ -2,9 +2,7 @@
 	import SettingsIcon from 'src/Img/SettingsIcon.svelte';
 </script>
 
-<div class="SettingsApp">
-	<SettingsIcon />
-</div>
+<div class="SettingsApp" />
 
 <style>
 	.SettingsApp {
