@@ -12,10 +12,12 @@
 
 <style>
 	.OpenedApp {
-		width: 600px;
-		height: 500px;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
 		background-color: red;
-		margin: 40px;
 	}
 
 	.OpenedApps {

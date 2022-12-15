@@ -1,5 +1,5 @@
 <script>
-	import ChromeIcon from 'src/Img/ChromeIcon.svelte';
+	import Window from '../Window/Window.svelte';
 </script>
 
 <Window>
@@ -9,4 +9,8 @@
 </Window>
 
 <style>
+	.ChromeApp {
+		width: 100%;
+		height: 100%;
+	}
 </style>
