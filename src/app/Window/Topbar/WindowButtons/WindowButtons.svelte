@@ -12,5 +12,11 @@
 
 <style>
 	.WindowButtons {
+		position: relative;
+		display: flex;
+		justify-content: right;
+		align-items: center;
+		align-content: center;
+		gap: 20px;
 	}
 </style>

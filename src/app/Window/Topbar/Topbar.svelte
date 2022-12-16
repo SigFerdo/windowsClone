@@ -12,6 +12,7 @@
 		left: 0;
 		width: 100%;
 		height: 30px;
-		background-color: aqua;
+		background-color: rgb(var(--window));
+		display: flex;
 	}
 </style>

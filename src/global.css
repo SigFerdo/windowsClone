@@ -1,6 +1,8 @@
     html {
         --black: 0, 0, 0;
         --text: 255, 255, 255;
+        --window: 32, 32, 32;
+        --windowButtons: 112, 112, 112;
     }
     
     * {
