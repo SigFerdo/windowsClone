@@ -14,9 +14,8 @@
 	.WindowButtons {
 		position: relative;
 		display: flex;
-		justify-content: right;
-		align-items: center;
-		align-content: center;
-		gap: 20px;
+		flex-direction: row;
+		gap: 10px;
+		margin: 5px;
 	}
 </style>

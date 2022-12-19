@@ -7,6 +7,7 @@
 </div>
 
 <style>
-	.MinimizeButton {
+	.MinimizeButton :global(svg *) {
+		fill: rgb(227, 228, 228);
 	}
 </style>

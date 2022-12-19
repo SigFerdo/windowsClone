@@ -7,6 +7,7 @@
 </div>
 
 <style>
-	.MaximizeButton {
+	.MaximizeButton :global(svg *) {
+		fill: rgb(227, 228, 228);
 	}
 </style>
