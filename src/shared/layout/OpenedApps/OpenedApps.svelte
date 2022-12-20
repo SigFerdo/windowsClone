@@ -1,25 +1,17 @@
 <script>
+	import Window from 'src/app/Window/Window.svelte';
 	import { openedApps } from 'src/utils/stores/openedApps';
 </script>
 
 <div class="OpenedApps">
 	{#each $openedApps as app}
-		<div class="OpenedApp">
+		<Window {app}>
 			<svelte:component this={app.component} />
-		</div>
+		</Window>
 	{/each}
 </div>
 
 <style>
-	.OpenedApp {
-		position: fixed;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		background-color: red;
-	}
-
 	.OpenedApps {
 		position: fixed;
 		top: 0;

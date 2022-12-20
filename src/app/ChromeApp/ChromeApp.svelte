@@ -1,12 +1,9 @@
 <script>
-	import Window from '../Window/Window.svelte';
 </script>
 
-<Window>
-	<div class="ChromeApp">
-		<!-- qui tutti i figli di chromeApp, chromeapp è il contenitore dell'app, all'interno della finestra -->
-	</div>
-</Window>
+<div class="ChromeApp">
+	<!-- qui tutti i figli di chromeApp, chromeapp è il contenitore dell'app, all'interno della finestra -->
+</div>
 
 <style>
 	.ChromeApp {

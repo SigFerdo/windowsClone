@@ -1,6 +1,5 @@
 <script>
 	import PinnedApps from './PinnedApps/PinnedApps.svelte';
-	import StartContainer from '../StartContainer/StartContainer.svelte';
 	import WindowsInfo from './WindowsInfo/WindowsInfo.svelte';
 </script>
 

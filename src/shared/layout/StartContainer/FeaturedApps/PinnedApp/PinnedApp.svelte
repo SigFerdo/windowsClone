@@ -1,8 +1,7 @@
 <script>
-	import { addApp } from 'src/utils/stores/start';
+	import { addApp } from 'src/utils/stores/openedApps';
 	import Icon from './Icon.svelte';
 	import Name from './Name.svelte';
-
 	export let app;
 </script>
 

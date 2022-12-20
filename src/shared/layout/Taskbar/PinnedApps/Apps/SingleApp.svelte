@@ -1,5 +1,5 @@
 <script>
-	import { addApp } from 'src/utils/stores/start';
+	import { addApp } from 'src/utils/stores/openedApps';
 	export let app;
 </script>
 

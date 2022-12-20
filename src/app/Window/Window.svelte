@@ -1,9 +1,11 @@
 <script>
 	import Topbar from './Topbar/Topbar.svelte';
+
+	export let app;
 </script>
 
 <div class="Window">
-	<Topbar />
+	<Topbar {app} />
 	<slot />
 </div>
 

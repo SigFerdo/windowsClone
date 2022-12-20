@@ -2,12 +2,14 @@
 	import CloseButton from './CloseButton.svelte';
 	import MaximizeButton from './MaximizeButton.svelte';
 	import MinimizeButton from './MinimizeButton.svelte';
+
+	export let app;
 </script>
 
 <div class="WindowButtons">
 	<MinimizeButton />
 	<MaximizeButton />
-	<CloseButton />
+	<CloseButton {app} />
 </div>
 
 <style>

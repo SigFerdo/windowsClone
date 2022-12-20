@@ -1,9 +1,11 @@
 <script>
 	import WindowButtons from './WindowButtons/WindowButtons.svelte';
+
+	export let app;
 </script>
 
 <div class="Topbar">
-	<WindowButtons />
+	<WindowButtons {app} />
 </div>
 
 <style>

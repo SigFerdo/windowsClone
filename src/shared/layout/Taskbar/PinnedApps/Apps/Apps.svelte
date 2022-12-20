@@ -1,5 +1,5 @@
 <script>
-	import { addApp, pinnedApps } from 'src/utils/stores/start';
+	import { pinnedApps } from 'src/utils/stores/start';
 	import SingleApp from './SingleApp.svelte';
 </script>
 
