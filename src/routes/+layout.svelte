@@ -3,6 +3,7 @@
 	import OpenedApps from 'src/shared/layout/OpenedApps/OpenedApps.svelte';
 	import StartContainer from 'src/shared/layout/StartContainer/StartContainer.svelte';
 	import Taskbar from 'src/shared/layout/Taskbar/Taskbar.svelte';
+	import { openedApps } from 'src/utils/stores/openedApps';
 	import '../global.css';
 </script>
 

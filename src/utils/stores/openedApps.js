@@ -13,11 +13,11 @@ export const addApp = (app) => {
         isMinimized: false
     };
 
-    openedApps.update(inputApp => {
-        if (inputApp.some((_appObject) => _appObject.id === app.id)) {
+    openedApps.update($openedApps => {
+        if ($openedApps.some((openedApp) => openedApp.id === appObject.id)) {
             return;
         }
-        return [...inputApp, appObject]
+        return [...$openedApps, appObject]
     })
 };
 
@@ -31,3 +31,22 @@ export const closeApp = (app) => {
         })
     })
 };
+
+export const maximizeApp = (app) => {
+    openedApps.update(($openedApps) => {
+        const newOpenedApps = $openedApps.map(openedApp => {
+            const match = openedApp.id === app.id
+
+            if (!match) return openedApp
+
+            return {
+                ...openedApp,
+                isMaximized: !openedApp.isMaximized
+            }
+
+        })
+
+        return newOpenedApps
+
+    })
+}

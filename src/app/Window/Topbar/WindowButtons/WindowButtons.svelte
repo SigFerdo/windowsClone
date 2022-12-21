@@ -8,7 +8,7 @@
 
 <div class="WindowButtons">
 	<MinimizeButton />
-	<MaximizeButton />
+	<MaximizeButton {app} />
 	<CloseButton {app} />
 </div>
 
