@@ -3,9 +3,17 @@
 	import Topbar from './Topbar/Topbar.svelte';
 
 	export let app;
+
+	$: console.log(app.isMinimized);
 </script>
 
-<div class="Window" class:WindowMaximized={app.isMaximized} transition:fly={{ y: 30 }}>
+<div
+	class="Window"
+	class:WindowMaximized={app.isMaximized}
+	class:WindowMinimized={app.isMinimized}
+	class:currentMinimized={!app.isMinimized}
+	transition:fly={{ y: 30 }}
+>
 	<Topbar {app} />
 	<slot />
 </div>
@@ -25,5 +33,14 @@
 	.WindowMaximized {
 		width: 100%;
 		height: 100%;
+	}
+
+	.WindowMinimized {
+		display: none;
+	}
+
+	.currentMinimized {
+		display: inline;
+		background-color: crimson;
 	}
 </style>

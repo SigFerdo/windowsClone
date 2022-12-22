@@ -7,7 +7,7 @@
 </script>
 
 <div class="WindowButtons">
-	<MinimizeButton />
+	<MinimizeButton {app} />
 	<MaximizeButton {app} />
 	<CloseButton {app} />
 </div>
