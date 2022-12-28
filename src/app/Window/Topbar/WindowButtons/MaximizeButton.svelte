@@ -3,9 +3,17 @@
 	import { maximizeApp } from 'src/utils/stores/openedApps';
 
 	export let app;
+	export let xPos;
+	export let yPos;
+
+	const handleClick = () => {
+		maximizeApp(app);
+		xPos = 0;
+		yPos = 0;
+	};
 </script>
 
-<button class="MaximizeButton" on:click={() => maximizeApp(app)}>
+<button class="MaximizeButton" on:click={handleClick}>
 	<MaximizeWindowIcon />
 </button>
 

@@ -3,12 +3,14 @@
 	import MaximizeButton from './MaximizeButton.svelte';
 	import MinimizeButton from './MinimizeButton.svelte';
 
+	export let xPos;
+	export let yPos;
 	export let app;
 </script>
 
 <div class="WindowButtons">
 	<MinimizeButton {app} />
-	<MaximizeButton {app} />
+	<MaximizeButton {app} bind:xPos bind:yPos />
 	<CloseButton {app} />
 </div>
 
