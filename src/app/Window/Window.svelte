@@ -6,9 +6,6 @@
 	let xPos = 50;
 	let yPos = 50;
 
-	$: left = `${xPos}px`;
-	$: top = `${yPos}px`;
-
 	const handleClick = (event) => {
 		if (event.clientX === 0 && event.clientY === 0) {
 			return;
