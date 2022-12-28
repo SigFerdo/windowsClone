@@ -2,6 +2,8 @@
 	import WindowButtons from './WindowButtons/WindowButtons.svelte';
 
 	export let app;
+	let xPos = 50;
+	let yPos = 50;
 </script>
 
 <div class="Topbar">

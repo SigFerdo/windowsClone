@@ -1,14 +1,29 @@
 <script>
 	import { fly } from 'svelte/transition';
 	import Topbar from './Topbar/Topbar.svelte';
-
 	export let app;
 
-	$: console.log(app.isMinimized);
+	let xPos = 50;
+	let yPos = 50;
+
+	$: left = `${xPos}px`;
+	$: top = `${yPos}px`;
+
+	const handleClick = (event) => {
+		if (event.clientX === 0 && event.clientY === 0) {
+			return;
+		}
+		xPos = event.clientX;
+		yPos = event.clientY;
+		console.log(event);
+	};
 </script>
 
 <div
 	class="Window"
+	on:drag={handleClick}
+	style="left:{xPos}px;
+	top:{yPos}px"
 	class:WindowMaximized={app.isMaximized}
 	class:WindowMinimized={app.isMinimized}
 	class:currentMinimized={!app.isMinimized}
@@ -25,9 +40,6 @@
 		width: 50%;
 		height: 50%;
 		border-radius: 12px;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
 	}
 
 	.WindowMaximized {
